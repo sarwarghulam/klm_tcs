@@ -6,6 +6,7 @@ import java.util.Map;
 import com.flight.search.api.flightsearchapi.bean.RequestFlightBean;
 import com.flight.search.api.flightsearchapi.bean.ResponseFlightBean;
 
+
 public interface FlightService {
 
 	public List<ResponseFlightBean> getAllFlight();

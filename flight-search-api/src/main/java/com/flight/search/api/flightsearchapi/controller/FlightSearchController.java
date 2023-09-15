@@ -3,6 +3,8 @@ package com.flight.search.api.flightsearchapi.controller;
 import java.util.List;
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +23,7 @@ import com.flight.search.api.flightsearchapi.bean.RequestFlightBean;
 import com.flight.search.api.flightsearchapi.bean.ResponseFlightBean;
 import com.flight.search.api.flightsearchapi.service.FlightService;
 
-import jakarta.validation.Valid;
+
 
 @RestController
 @RequestMapping("/api/v1/")
