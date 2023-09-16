@@ -104,7 +104,7 @@ public class FlightServiceImplTest {
 		Mockito.when(objectMapper.mapEntityToResponse(any(Flight.class))).thenReturn(this.responseFlightBean);
 
 		Assert.assertEquals(flightService.patchFlight(hashMap, "AZ01").getDestination(), "mumbai");
-		Mockito.when(flightRepository.findById(any())).thenReturn(null);
+		Mockito.when(flightRepository.findById(any())).thenReturn(Optional.ofNullable(null));
 		assertThrows(FlightNotFoundException.class, () -> flightService.patchFlight(hashMap, "AZ01"));
 	}
 

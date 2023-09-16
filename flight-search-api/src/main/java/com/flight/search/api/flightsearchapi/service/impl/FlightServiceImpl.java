@@ -105,7 +105,7 @@ public class FlightServiceImpl implements FlightService {
 	@Override
 	public ResponseFlightBean patchFlight(Map<String, String> map, String flightNumber) throws FlightNotFoundException {
 		Optional<Flight> fl = flightRepository.findById(flightNumber);
-		if(fl != null && fl.isPresent()) {
+		if(fl.isPresent()) {
 			Flight flight = fl.get();
 			map.forEach((key, value) -> {
 				switch (key) {

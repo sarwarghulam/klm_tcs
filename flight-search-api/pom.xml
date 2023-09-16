@@ -16,7 +16,7 @@
 	<name>flight-search-api</name>
 	<description>Project to get the details of flight</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
